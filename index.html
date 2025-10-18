@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Rather? - The Ultimate Choice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Would You Rather?</h1>
+            <p class="subtitle">The Ultimate Choice Game</p>
+        </header>
+
+        <div class="game-area">
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">Questions</span>
+                    <span class="score-value" id="questionCount">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Streak</span>
+                    <span class="score-value" id="streak">0</span>
+                </div>
+            </div>
+
+            <div class="question-container" id="questionContainer">
+                <h2 class="question-text" id="questionText">Choose your preference!</h2>
+                
+                <div class="options-container">
+                    <button class="option-btn" id="optionA">
+                        <span class="option-text" id="optionAText">Option A</span>
+                    </button>
+                    
+                    <div class="vs-divider">
+                        <span>VS</span>
+                    </div>
+                    
+                    <button class="option-btn" id="optionB">
+                        <span class="option-text" id="optionBText">Option B</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" id="skipBtn">Skip Question</button>
+                <button class="btn btn-primary" id="newGameBtn">New Game</button>
+            </div>
+
+            <div class="stats-container" id="statsContainer" style="display: none;">
+                <h3>Your Stats</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Questions</span>
+                        <span class="stat-value" id="totalQuestions">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Current Streak</span>
+                        <span class="stat-value" id="currentStreak">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Best Streak</span>
+                        <span class="stat-value" id="bestStreak">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
